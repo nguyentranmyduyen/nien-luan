@@ -1,0 +1,33 @@
+.img {
+transition: all 1s ease;
+-webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-o-transition: all 1s ease;
+}
+ 
+.img:hover {
+transform: scale(1.5,1.5);
+-webkit-transform: scale(1.5,1.5);
+-moz-transform: scale(1.5,1.5);
+-o-transform: scale(1.5,1.5);
+-ms-transform: scale(1.5,1.5);
+}
+.ifo_chitiet{
+    height: 900px;
+    padding-top: 100px;
+    padding-left: 100px;
+}
+#hinhanh_lienquan{
+    padding-top: 50px;
+}
+#chitiet{
+    padding-top: 50px;
+}
+.chitiet_sp{
+    padding-top: 50px;
+}
+.img{
+    padding-top: 30px;
+    padding-right: 80px;
+    padding-left:200px;
+}

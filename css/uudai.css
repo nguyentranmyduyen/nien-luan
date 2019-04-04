@@ -1,0 +1,147 @@
+
+ .home{
+     font-size: 20px;
+     margin-left: 100px;
+     
+ }* {
+  margin: 0;
+  padding: 0;
+}
+ 
+/*==Style cơ bản cho website==*/
+html{
+    min-height: 100%;
+    min-width: 100%;
+}
+
+body {
+  
+  font-family: sans-serif;
+  color: #333;
+  /* background-image: url('image/03-spa-tan-co-dien-06-le-tan-khu-an-chay.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;*/
+}
+ 
+
+
+.dichvu2{
+        height: 550px;padding-top: 20px;
+        padding-bottom: 50px;
+    }
+    .dichvu1{
+        height: 550px;padding-top: 20px;
+    }
+    #dichvu{
+        
+        padding-bottom: 40px;
+        background: #fff;
+       
+    }
+    .info{
+        text-align: center
+    }
+    .info1{
+        text-align: center;
+    }
+    .tamhoi{
+   
+    
+        position: relative;
+    }
+   .o{
+  position: absolute; 
+  top: 0px; 
+  left: 0px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.3); 
+  color: #f1f1f1; 
+  height: 500px;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.o:hover{
+    color:#fff;
+    text-decoration: none;
+}
+.tamhoi:hover .o{
+  opacity: 1;
+}
+  .massage{
+     
+    
+        position: relative;
+    }
+   .o1{
+  position: absolute; 
+  top: 0px; 
+  left: 0px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.3); 
+  color: #f1f1f1; 
+  height: 500px;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.o1:hover{
+    color:#fff;
+    text-decoration: none;
+}
+.massage:hover .o1{
+  opacity: 1;
+}
+  .gym{
+     
+    
+        position: relative;
+    }
+   .o2{
+  position: absolute; 
+  top: 0px; 
+  left: 0px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.3); 
+  color: #f1f1f1; 
+  height: 500px;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.o2:hover{
+    color:#fff;
+    text-decoration: none;
+}
+.gym:hover .o2{
+  opacity: 1;
+}
+    #footer{
+        background: #000;
+        height: 200px;
+        margin-top: 0px;
+       
+    }
+    .info_hotel{
+        padding-top: 20px;
+        color:#fff;
+        font-size: 12px;
+    }
+    .icon{
+        margin-top: 80px;
+    }
+    .trang_dv{
+        margin-top: 50px;
+    }

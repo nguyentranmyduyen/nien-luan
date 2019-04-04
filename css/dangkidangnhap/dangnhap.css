@@ -1,0 +1,18 @@
+body{
+    background: #eee;
+}
+#dangnhap{
+    border: solid gray 1px ;
+    width: 150px;
+    margin: 100px auto;
+    background: white;
+    padding: 50px 150px 50px 100px;
+}
+#btn{
+    color: #fff;
+    background: #337ad7;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 3px;
+ 
+}

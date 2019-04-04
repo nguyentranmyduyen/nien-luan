@@ -1,0 +1,18 @@
+   
+/*==Style cho footer===*/
+    #footer{
+        background: #b88a00;
+        height: 200px;
+        margin-top: 0px;
+       
+    }
+    .info_hotel{
+        padding-top: 20px;
+        color:#fff;
+        font-size: 12px;
+    }
+    .icon{
+        margin-top: 80px;
+    }
+    
+/*==Kết thúc footer ===*/

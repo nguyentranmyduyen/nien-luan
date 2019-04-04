@@ -1,0 +1,27 @@
+   
+/*==Style cho footer===*/
+    #footer{
+        background: rgba(0,0, 0, 0); 
+        height: 200px;
+        margin-top: 0px;
+           border-top: 1px solid #cc6600;
+       
+    }
+    .info_hotel{
+        padding-top: 20px;
+        color:#000;
+        font-size: 12px;
+    }
+    .icon{
+        margin-top: 20px;
+    }
+    .fa{
+        color: #0066ff;
+        font-size: 18px;
+        text-align: right;
+        margin-left: 20px;
+    }
+    .foter_ifo{
+        padding-top: 10px;
+    }
+ /* thúc footer ===*/

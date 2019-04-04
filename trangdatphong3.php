@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+       <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link href="css/bootstrap-4.0.0-dist (1)/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+          
+        <script src="css/bootstrap-4.0.0-dist (1)/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="css/jquery/jquery-3.3.1.min.js.js" type="text/javascript"></script>
+        <link href="css/fontawesome-free-5.5.0-web/fontawesome-free-5.5.0-web/css/all.css" rel="stylesheet" type="text/css"/>
+        <link href="css/header.css" rel="stylesheet" type="text/css"/>
+        <link href="css/footer.css" rel="stylesheet" type="text/css"/>
+        <link href="css/trangdatphong3.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <!--<body>
+  <div id="header"> <?php include 'header.php';?></div>
+  <div id="content">
+      <div class="content_center">
+     
+      <p style="text-align: center;font-size: 40px;">LOVA<spam style="font-size: 25px;">HOTEL</spam><span style="font-size: 16px;">SPA</span></p>
+      <div class="info_ho">
+          <div class="row">
+       <div class="col-md-3" ><span class="time">1</span>&nbsp;Thời Gian Đặt Phòng</div>
+       <div class="col-md-3"><span class="chonphong ">2</span>&nbsp;Chọn Phòng</div>
+       <div class="col-md-3"><span class="inf_rom">3</span>&nbsp;Thông Tin Cá Nhân </div>
+       <div class="col-md-3" ><span class="money">4</span>&nbsp; Thông Tin Đặt Phòng  </div>
+            </div>
+      </div>
+      <div class="soluong">
+          <h2 style="margin-left: 200px;padding-top: 20px; ">Thông tin của bạn </h2>
+                    <form name="" action="" method="post">
+                <div>
+     
+        <input name="MA_KH2" id="tensv" type="hidden" placeholder="" /> <br><br>
+        <label align="center" style="font-weight: bold;"> Họ Tên :  </label>
+        <input name="HOTEN_KH" id="tens" type="text" placeholder="" /> <br><br>
+        <label align="center" id="tensv1" style="font-weight: bold;">Giới tính :</label>
+                <select name="GIOI_TINH">
+                    <option> Chọn </option>
+                    <option value="1">Nam</option>
+                    <option value="0">Nữ</option>
+                </select><br><br>
+       <label align="center" style="font-weight: bold;">Ngày sinh : </label>
+       <input name="NGAY_SINH" id="ten" type="date" placeholder="" /> <br><br>
+        <label align="center" style="font-weight: bold;">Địa chỉ :</label>
+        <input name="DIA_CHI" id="te" type="text" placeholder="" /> <br><br>
+         <label align="center" style="font-weight: bold;">Số điện thoại :</label>
+        <input name="SO_DT" id="t" type="text" placeholder="" /> <br><br>
+        <input class="tieptheo1" name="submit" type="submit" value="Đặt phòng " /> 
+        
+    </div>
+             
+</form>
+            //   <?php
+            //include 'connect.php';
+            
+            // if (isset($_POST['submit'])){
+                //         $MA_NV2 = $_POST['MA_KH2'] ;
+                  //      $HOTEN_KH = $_POST ['HOTEN_KH'] ;
+                    //    $GIOI_TINH = $_POST ['GIOI_TINH'];
+                      //  $NGAY_SINH = $_POST ['NGAY_SINH'];
+                        // $DIA_CHI = $_POST['DIA_CHI'];
+                       // $SO_DT = $_POST['SO_DT'];
+                //$sql = "insert into khachhang(MA_KH2 , HOTEN_KH ,GIOI_TINH , NGAY_SINH, DIA_CHI , SO_DT)values('".$_POST['MA_KH2']."','".$_POST['HOTEN_KH']."','".$_POST['GIOI_TINH']."','".$_POST['NGAY_SINH']."','".$_POST['DIA_CHI']."','".$_POST['SO_DT']."')";
+		//if(mysqli_query($conn,$sql)){
+		//	header('Location:trangdatphong1.php');
+		//}else{
+		//	echo"Error".mysqli_error($conn);
+	 	// }
+  //  }
+            
+            ?>
+      </div>
+     
+      
+      </div>
+  </div>-->
+    <!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+             <div id="Themkhachhang ">
+            <?php
+            include 'connect.php';
+            if (isset($_POST['submit'])){
+                        $MA_NV2 = $_POST['MA_KH2'] ;
+                        //$HINH_ANH=$_POST['HINH_ANH'];
+                        $HOTEN_KH = $_POST ['HOTEN_KH'] ;
+                        $GIOI_TINH = $_POST ['GIOI_TINH'];
+                        $NGAY_SINH = $_POST ['NGAY_SINH'];
+                        $DIA_CHI = $_POST['DIA_CHI'];
+                        $SO_DT = $_POST['SO_DT'];
+                $sql = "insert into khachhang(MA_KH2 , HOTEN_KH ,GIOI_TINH , NGAY_SINH, DIA_CHI , SO_DT)values('".$_POST['MA_KH2']."','".$_POST['HOTEN_KH']."','".$_POST['GIOI_TINH']."','".$_POST['NGAY_SINH']."','".$_POST['DIA_CHI']."','".$_POST['SO_DT']."')";
+		if(mysqli_query($conn,$sql)){
+			header('Location:hienthi_them_khachhang.php');
+		}else{
+			echo"Error".mysqli_error($conn);
+	 	 }
+    }
+            
+            ?>
+            <form name="themsv" action="" method="post">
+                <div>
+        <label align="center" style="font-weight: bold;">Mã khách hàng  </label>
+        <input name="MA_KH2" id="tensv" type="text" placeholder="" /> <br><br>
+        <label align="center" style="font-weight: bold;">Tên khách hàng </label>
+        <input name="HOTEN_KH" id="tensv" type="text" placeholder="" /> <br><br>
+        <label align="center" style="font-weight: bold;">Giới tính</label>
+                <select name="GIOI_TINH">
+                    <option value="1">Nam</option>
+                    <option value="0">Nữ</option>
+                </select><br><br>
+       <label align="center" style="font-weight: bold;">Ngày tháng năm sinh  </label>
+       <input name="NGAY_SINH" id="tensv" type="date" placeholder="" /> <br><br>
+        <label align="center" style="font-weight: bold;">Địa chỉ</label>
+        <input name="DIA_CHI" type="text" placeholder="" /> <br><br>
+         <label align="center" style="font-weight: bold;">Số điện thoại</label>
+        <input name="SO_DT" type="text" placeholder="" /> <br><br>
+        <input name="submit" type="submit" value="Thêm" /> 
+      
+    </div>
+             </div>
+</form>
+       
+        <div id="hienthikhachhang">
+            <h3>Thông tin khách hàng </h3>
+            <table  width="100%" border="1" cellspacing="0" cellpadding="10">
+                <tr>
+                    <td>Mã khách hàng</td>
+                    <!--<td>Hình ảnh</td>-->
+                    <td>Họ tên khách hàng </td>
+                    <td>Giới tính </td>
+                    <td>Ngày tháng năm sinh</td>
+                    <td>Đại chỉ</td>
+                    <td>Số điện thoại</td>
+                    <td>Sửa</td>
+                    <td>Xóa </td>
+                    
+                </tr>
+                     <?php
+                     include 'connect.php';
+                $sql= "SELECT * FROM khachhang";
+                $result= mysqli_query($conn, $sql);
+               if (mysqli_num_rows($result)>0){
+                    while ($row= mysqli_fetch_array($result)){
+                        $MA_KH2 = $row ['MA_KH2'] ;
+                      // $HINH_ANH=$row['HINH_ANH'];
+                        $HOTEN_KH = $row ['HOTEN_KH'] ;
+                        if ($row ['GIOI_TINH']  == 1 ){
+                            $GIOI_TINH = "Nam";
+                        }else {
+                            $GIOI_TINH = "Nữ";
+                        }
+                          
+                        $NGAY_SINH = $row ['NGAY_SINH'];
+                        $DIA_CHI = $row ['DIA_CHI'];
+                        $SO_DT = $row ['SO_DT'];
+                        echo "<tr>";
+                        echo "<td>$MA_KH2</td>";
+                          //  echo '<td><img height=50px width=50px src="data:image/jpeg;base64,'.base64_encode( $row['HINH_ANH'] ).'"/></td>';
+                             echo "<td>$HOTEN_KH</td>";
+                             echo "<td>$GIOI_TINH</td>";
+                             echo "<td>$NGAY_SINH</td>";
+                             echo "<td>$DIA_CHI</td>";
+                             echo "<td>$SO_DT</td>";
+                            echo "<td><a href='sua_khachhang.php?MA_KH2=".$row['MA_KH2']."'>Sửa</a></td>";
+                            echo "<td><a href='xoa_khachhang.php?MA_KH2=".$row['MA_KH2']."'>Xóa</a></td>";
+                            echo "</tr>";
+                       
+                        
+
+                    }
+                }
+                ?>
+               
+                        </table>
+        </div>
+
+    </body>
+</html>
+
+    <div id="footer"><?php include 'footer.php';?></div>
+        </div>
+    </body>
+</html>
+

@@ -1,0 +1,15 @@
+$(document).ready(function(){
+    $(".tinhsoluong").change(function(){
+        slm=$(this).val();
+        MA_PHONG2=$(this).attr("data-maphong");
+        $.ajax({
+          url:"css/jquery/xulydatphong.php",
+          type:"post",
+          data:"slm="+slm+"&MA_PHONG2="+MA_PHONG2,
+          async:true,
+          success:function(kq){
+              location.reload();
+          }
+      });
+    });
+}); 

@@ -1,0 +1,53 @@
+ .home{
+     font-size: 20px;
+     margin-left: 100px;
+     
+ }
+.sub_content{
+       background: rgba(0, 0, 0, 0.3); 
+        background: #fff;
+        height: 1200px;
+       
+        padding-top: 5px;
+      
+    }
+     .ima{
+       position: relative;
+       
+    }
+    
+    .diadiem{
+        position: absolute;
+top: 351px;
+left: 15px;
+color: #fff;
+font-size: 20px;
+background: rgba(0,0,0,0.5);
+width: 630px;
+text-align: center;
+padding-top: 10px;
+padding-bottom: 10px;
+    }
+   .khuyenmai{
+        position: absolute;
+        top :50px;
+        left: 80px;
+        color: red;
+        font-size: 30px;
+      
+    }
+      .khuyenmai1{
+        position: absolute;
+        top :80px;
+        left: 300px;
+        color: red;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+       .khuyenmai2{
+        position: absolute;
+        top :0px;
+        left: 100px;
+        color: red;
+    }
+    
